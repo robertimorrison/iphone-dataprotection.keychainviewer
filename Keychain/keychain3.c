@@ -75,7 +75,7 @@ CFDataRef decrypt_data_ios3(const uint8_t* datab, uint32_t len, uint32_t* pclass
     {
         fprintf(stderr, "seteuid(_securityd) failed, errno=%d\n", errno);
     }
-    if(geteuid() != 64) //HAX otherwise looks like the new uid isnt "commited"
+    if(geteuid() != 64) //HAX otherwise looks like the new uid isn't "committed"
     {
         fprintf(stderr,"geteuid=%x\n", geteuid()); 
     }
