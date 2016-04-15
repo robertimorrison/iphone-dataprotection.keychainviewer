@@ -108,9 +108,9 @@ NSString* convertToString(id obj)
         cell.detailTextLabel.text = convertToString([dict objectForKey:@"agrp"]);
     }
     
-    NSString* clas = (NSString*) [dict objectForKey:@"protection_class"];
+    NSString* class = (NSString*) [dict objectForKey:@"protection_class"];
 
-    if (![clas hasPrefix:@"Always"]) {
+    if (![class hasPrefix:@"Always"]) {
         cell.textLabel.textColor = [UIColor greenColor];
     }
     else {
